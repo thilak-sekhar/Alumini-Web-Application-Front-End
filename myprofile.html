@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Profile</title>
+</head>
+<body>
+    <div class="sidebar">
+        <button  onclick="location.href='index.html';" class="back" style="background-color: #ddd;max-width: 50px; color:#1c1c1c; border-radius: 20%;">BACK</button>
+        <h2 style="color: #ced4da;"><center><strong>MY PROFILE</strong></center></h2>
+        <button id="basicprofile">Basic Profile</button>
+        <button id="locationandcontactdetails">Location and Contact Details</button>
+        <button id="educationaldetails">Educational Details</button>
+        <button id="work_professionaldetails">Work/Professional Details</button>
+        <button id="achievements">Achievements</button>
+        <button id="resumeandattachements">Resume and Attachments</button>
+        <button id="socialconnections">Social Connections</button>
+        <button id="additionaldetails">Additional Details</button>
+    </div>
+    
+    <div class="container">
+        <div class="profile-header">
+            <center>  <img src="images/profilepic.jpg" alt="Profile Picture">
+              <h1>K THILAK SEKHAR</h1></center>
+          </div>
+          <h4 style="margin-left: 35%;">Welcome! K THILAK SEKHAR</h4>
+          <br>
+          <hr>
+          <br>
+
+        <div id="basicprofilesec" class="form-section">
+            <h3>Personal Information</h3>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" value="K THILAK SEKHAR" disabled>
+            
+            <label for="gradYear">Graduation Year:</label>
+            <input type="number" id="gradYear" value="2027" disabled>
+            
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" value="B.TECH CSE(AI&ML)" disabled>
+            
+            <label for="location">Adress:</label>
+            <input type="text" id="location" value="Chittoor"  disabled>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="122311530115@apollouniversity.edu.in" disabled>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" value="xxxxxxxxxx" disabled>
+            <button id="savePersonalInfo" disabled="true">Save</button>
+            <button  id="updateinfo">Update</button>
+        </div>
+        <div id="locationandcontactdetailssec" class="form-section">
+            <h2>Locations and Contact Details</h2>
+            <p>Please update current location and contact information.</p>
+            <label for="Currentcity">Current City:</label>
+            <input type="text" id="Currentcity" value="Chittoor" disabled>
+            
+            <label for="Currentcity">Home Town:</label>
+            <input type="text" id="Currentcity" value="Chittoor, Andhra Pradesh, India"  disabled>
+
+            <h3> Address for Correspondence</h3>
+            <label for="address">Address:</label>
+            <input type="text" id="address" value="24/14 bank colony" disabled>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" value="Chittoor"  disabled>
+            <h3>Enter Your Contact Details</h3>
+    
+        <label for="phone">Phone Number:</label>
+         <select id="country-code" name="country-code">
+            <option value="+91">India (+91)</option>
+            <option value="+1">United States (+1)</option>
+            <option value="+44">United Kingdom (+44)</option>
+            <option value="+61">Australia (+61)</option>
+            <option value="+49">Germany (+49)</option>
+            <option value="+33">France (+33)</option>
+            <option value="+81">Japan (+81)</option>
+            <option value="+86">China (+86)</option>
+        </select>
+        <input type="tel" id="phone" name="phone-number" value="1234567890" required disabled="true">
+        <label for="Show_contact">SHOW CONTACT DETAILS TO</label>
+            <input type="radio" id="Show_contact" required>All members
+            <input type="radio" id="Show_contact"  required>Batchmates
+            <input type="radio" id="Show_contact" required>Only Admin   
+        <label for="email">Email:</label>
+            <input type="email" id="email" value="122311530115@apollouniversity.edu.in" disabled>
+        <label for="email">Alternative Email:</label>
+            <input type="email" id="email" value="122311530115@apollouniversity.edu.in" disabled>
+           
+            <label for="mail_contact">SHOW E-MAIL ID TO</label>
+            <input type="radio" id="mail_contact" required>All members
+            <input type="radio" id="mail_contact"  required>Batchmates
+            <input type="radio" id="mail_contact" required>Only Admin  
+            <h3>Social Profiles</h3>
+             
+            <label for="phone">Website/Portfolio/Blog:</label>
+            <input type="text" id="yourweb" value="https://yourwebsite.com" disabled>
+             
+            <label for="phone">Facebook Profile:</label>
+            <input type="tel" id="facebook" value="https://facebook.com" disabled>
+             
+            <label for="phone">Linkedin Profile:</label>
+            <input type="tel" id="linkedin" value="https://Linkedin.com" disabled>
+             
+            <label for="phone">Twitter:</label>
+            <input type="text" id="twitter" value="https://yourwebsite.com" disabled>
+            <button id="savePersonalInfo" disabled="true">Save</button>
+            <button  id="updateinfo">Update</button>
+        </div>
+
+        <div id="educationaldetailssec" class="form-section">
+            <h3>Educational Details</h3>
+            <p>You can add courses/degrees pursued.</p>
+            <input type="text" id="educationaldetails" value="The Apollo University" disabled>
+            <button id="savePersonalInfo" disabled="true">Save</button>
+            <button  id="updateinfo">Update</button>
+        </div>
+
+        <div id="work_professionaldetailssec" class="form-section">
+            <h3>WORK AND PROFESSIONAL DETAILS</h3>
+            <label for="jobtitle">JOB TITLE</label>
+            <input type="text" id="jobtitle" value="CEO" disabled>
+            <label for="company">COMPANY NAME</label>
+            <input type="text" id="jobtitle" value="GOOGLE" disabled>
+            <label for="company_address">COMPANY ADDRESS</label>
+            <input type="text" id="experience" value="1/22 ,USA  NEW BUS STAND" disabled>
+            
+            <label for="experience">EXPERIENCE</label>
+            <input type="text" id="experience" value="5 Years of experience in APPLE company as CEO" disabled>
+
+            <label for="company_address">PREVIOUS COMPANY ADDRESS</label>
+            <input type="text" id="experience" value="1/22 , NEWYORK OLD BUS STAND" disabled>
+            
+            <button id="savePersonalInfo" disabled="true">Save</button>
+            <button  id="updateinfo">Update</button>
+        </div>
+        <div id="achievementssec" class="form-section">
+            <center> <h3>Best Employee Of The Ever</h3>
+            
+            <br>
+
+            <img src="images/ach_1.avif" style="height: 15dvh; width: 20dvh;">
+            <h3 style="background-color: #333; color: #ced4da;">  K THILAK SEKHAR has consistently demonstrated exceptional performance and dedication in their role as CEO. Over the past 10, they have led initiatives that resulted in a 100% increase in customer satisfaction while also developing innovative solutions that streamlined team processes and improved efficiency by 2 years. As a mentor, He have played a crucial role in training new team members, fostering a collaborative environment, and uplifting the morale of the entire department. Their unwavering commitment to customer satisfaction has earned them numerous accolades from clients, solidifying their reputation as a key asset to the team and an inspiration to their peers
+            </h3>
+
+            <button style="width: 20dvh;" id="updateinfo">Add Achievements</button>
+        </center>
+        </div>
+        <div id="resumeandattachementssec" class="form-section">
+            <div class="container">
+                <h1>K Thilak Sekhar</h1>
+                <div class="contact-info">
+                    <h2 class="section-title">Contact Information</h2>
+                    <p>Email: k.thilak.sekhar@example.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>LinkedIn: linkedin.com/in/kthilaksekhar</p>
+                    <p>Location: Hyderabad, India</p>
+                </div>
+        
+                <div class="education">
+                    <h2 class="section-title">Education</h2>
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <p>Apollo University, Hyderabad, India | Graduated: 2024</p>
+                    <p>GPA: 3.8/4.0</p>
+                </div>
+        
+                <div class="experience">
+                    <h2 class="section-title">Work Experience</h2>
+                    <h3>Intern - Software Developer</h3>
+                    <p>Tech Solutions Inc., Hyderabad, India | Jan 2024 - June 2024</p>
+                    <ul>
+                        <li>Developed and implemented new features for a web-based application, improving user engagement by 30%.</li>
+                        <li>Collaborated with cross-functional teams to troubleshoot and resolve software issues.</li>
+                        <li>Participated in code reviews and contributed to best practices in software development.</li>
+                    </ul>
+                </div>
+        
+                <div class="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul>
+                        <li>Programming Languages: Java, Python, JavaScript</li>
+                        <li>Web Technologies: HTML, CSS, React.js, Node.js</li>
+                        <li>Database Management: MySQL, MongoDB</li>
+                        <li>Tools & Frameworks: Git, Docker, Agile Methodologies</li>
+                    </ul>
+                </div>
+        
+            </div>
+        </div>
+        <div id="socialconnectionssec" class="form-section">
+            <div class="container">
+                <h2>Connect with Me</h2>
+                <div class="social-connections">
+                    <a href="https://www.linkedin.com/in/kthilaksekhar" target="_blank" class="social-icon" title="LinkedIn">
+                        <span role="img" aria-label="LinkedIn">🔗</span> LinkedIn
+                    </a>
+                    <br>
+                    <a href="https://github.com/kthilaksekhar" target="_blank" class="social-icon" title="GitHub">
+                        <span role="img" aria-label="GitHub">🐱</span> GitHub
+                    </a>
+                    <br>
+
+                    <a href="https://twitter.com/kthilaksekhar" target="_blank" class="social-icon" title="Twitter">
+                        <span role="img" aria-label="Twitter">🐦</span> Twitter
+                    </a>
+                    <br>
+
+                    <a href="https://www.facebook.com/kthilaksekhar" target="_blank" class="social-icon" title="Facebook">
+                        <span role="img" aria-label="Facebook">📘</span> Facebook
+                    </a>
+                </div>
+            </div>
+            <button id="savePersonalInfo" disabled="true">Save</button>
+            <button  id="updateinfo">Update</button>
+        </div>
+        <div id="additionaldetailssec" class="form-section">
+            <center><h3>Additional Information</h3></center>
+            <label for="bio">Short bio</label>
+            <input type="text" id="bio" value="Aspiring software developer K Thilak Sekhar, passionate about coding and innovative technology solutions."</center> disabled>
+            
+            <div class="container">
+                <h2>Volunteer Experience</h2>
+        
+                <div class="volunteer-role">
+                    <h3>Alumni Mentor</h3>
+                    <p><strong>Apollo University Alumni Network</strong></p>
+                    <p><em>Hyderabad, India</em> | June 2024 - Present</p>
+                    <ul>
+                        <li>Engaged with recent graduates to provide guidance on career development and job search strategies.</li>
+                        <li>Organized workshops on skill development, including coding boot camps and resume writing sessions.</li>
+                        <li>Collaborated with university staff to create a mentorship program connecting experienced alumni with current students.</li>
+                    </ul>
+                </div>
+        
+                <div class="volunteer-role">
+                    <h3>Community Coordinator</h3>
+                    <p><strong>Apollo University Alumni Platform</strong></p>
+                    <p><em>Hyderabad, India</em> | January 2024 - Present</p>
+                    <ul>
+                        <li>Spearheaded initiatives to enhance alumni engagement through networking events and webinars.</li>
+                        <li>Developed a digital platform for alumni to share resources and job opportunities.</li>
+                        <li>Managed social media channels to highlight alumni achievements and foster community participation.</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="savePersonalInfo" disabled="true">Save</button>
+            <button  id="updateinfo">Update</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('basicprofile').addEventListener('click', function() {
+            showSection('basicprofilesec');
+        });
+        document.getElementById('locationandcontactdetails').addEventListener('click', function() {
+            showSection('locationandcontactdetailssec');
+        });
+        document.getElementById('educationaldetails').addEventListener('click', function() {
+            showSection('educationaldetailssec');
+        });
+        document.getElementById('work_professionaldetails').addEventListener('click', function() {
+            showSection('work_professionaldetailssec');
+        });
+        document.getElementById('achievements').addEventListener('click', function() {
+            showSection('achievementssec');
+        });
+        document.getElementById('resumeandattachements').addEventListener('click', function() {
+            showSection('resumeandattachementssec');
+        });
+        document.getElementById('socialconnections').addEventListener('click', function() {
+            showSection('socialconnectionssec');
+        });
+        document.getElementById('additionaldetails').addEventListener('click', function() {
+            showSection('additionaldetailssec');
+        });
+
+        document.getElementById('updateinfo').addEventListener('click', function() {
+        document.getElementById("fullName").disabled = false;
+        document.getElementById("gradYear").disabled = false;
+        document.getElementById("degree").disabled = false;
+        document.getElementById("location").disabled = false;
+        document.getElementById("email").disabled = false;
+        document.getElementById("phone").disabled = false;
+        document.getElementById("savePersonalInfo").disabled = false;
+        });
+
+        
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.form-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+
+        document.getElementById('savePersonalInfo').addEventListener('click', function() {
+            alert('Professional information saved!');
+            // Implement save logic here
+        document.getElementById("fullName").disabled = false;
+        document.getElementById("gradYear").disabled = false;
+        document.getElementById("degree").disabled = false;
+        document.getElementById("location").disabled = false;
+        document.getElementById("email").disabled = false;
+        document.getElementById("phone").disabled = false;
+        document.getElementById("savePersonalInfo").disabled = false;
+        // For now, just display the updated data in the console (you can replace this with code to save the data)
+        console.log("Updated Alumni Information:");
+        console.log("Name:", fullName);
+        console.log("Year of Graduation:", gradYear);
+        console.log("Degree:", degree);
+        console.log("Location:", location);
+        console.log("Email:", email);
+        console.log("Phone:", phone);
+
+        // Disable input fields and Save Changes button after saving
+        document.getElementById("fullName").disabled = true;
+        document.getElementById("gradYear").disabled = true;
+        document.getElementById("degree").disabled = true;
+        document.getElementById("location").disabled = true;
+        document.getElementById("email").disabled = true;
+        document.getElementById("phone").disabled = true;
+        document.getElementById("savePersonalInfo").disabled = true;
+        });
+        
+    </script>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #e9ecef;
+                margin: 0;
+                display: flex;
+            }
+    
+            .sidebar {
+                width:25dvh;
+                background-color:#343a40;
+                color: white;
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            .sidebar h2 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+    
+            .sidebar button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                padding: 10px 0;
+                text-align: left;
+                width: 100%;
+                transition: background 0.3s;
+                margin:10px;
+            }
+    
+            .sidebar button:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+    
+            .container {
+                flex-grow: 1;
+                padding: 20px;
+                background: #ffffff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            h1 {
+                text-align: center;
+                color: #007bff;
+                margin-bottom: 20px;
+            }
+    
+            .form-section {
+                display: none;
+                margin-top: 20px;
+            }
+    
+            h3 {
+                margin-top: 20px;
+                color: #343a40;
+            }
+    
+            label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+    
+            input {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+                transition: border-color 0.3s;
+            }
+    
+            input:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+    
+            button.save {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+    
+            button.save:hover {
+                background-color: #0056b3;
+            }
+            .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 35%;
+        }
+
+        .profile-header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info, .education, .experience, .skills, .achievements {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .social-connections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077b5; /* Default color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon:hover {
+    background-color: #005582; /* Darker shade on hover */
+}
+
+.social-icon:nth-child(2) {
+    background-color: #333; /* GitHub color */
+}
+
+.social-icon:nth-child(2):hover {
+    background-color: #1c1c1c; /* Darker shade on hover */
+}
+
+.social-icon:nth-child(3) {
+    background-color: #1da1f2; /* Twitter color */
+}
+
+.social-icon:nth-child(3):hover {
+    background-color: #0a87b8; /* Darker shade on hover */
+}
+
+.social-icon:nth-child(4) {
+    background-color: #3b5998; /* Facebook color */
+}
+
+.social-icon:nth-child(4):hover {
+    background-color: #2d4373; /* Darker shade on hover */
+}
+
+.social-icon span {
+    margin-right: 5px; /* Space between emoji and text */
+}
+.volunteer-role {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.volunteer-role h3 {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+.volunteer-role p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+</style>
+</body>
+</html>
